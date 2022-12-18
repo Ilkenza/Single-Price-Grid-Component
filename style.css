@@ -1,0 +1,122 @@
+body {
+  font-family: "Karla", sans-serif;
+  background: hsl(204deg, 43%, 93%);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+}
+.all main {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: 220px 250px;
+  grid-template-areas: "box-1 box-1" "box-2 box-3";
+  justify-content: center;
+}
+.all main .box {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.all main .one {
+  grid-area: box-1;
+  background: #FFFFFF;
+}
+.all main .one h1 {
+  color: hsl(179deg, 62%, 43%);
+  padding: 20px 30px 0px;
+  font-size: 25px;
+}
+.all main .one h2 {
+  color: hsl(71deg, 73%, 54%);
+  padding: 0px 30px;
+  font-size: 18px;
+  margin: 0px;
+}
+.all main .one p {
+  color: hsl(218deg, 22%, 67%);
+  font-size: 16px;
+  padding: 0px 30px;
+  line-height: 30px;
+}
+.all main .two {
+  grid-area: box-2;
+  background: hsl(179deg, 62%, 43%);
+  padding: 20px 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.all main .two .m-s {
+  font-size: 19px;
+  color: hsl(204deg, 43%, 93%);
+}
+.all main .two .box-t {
+  display: flex;
+  align-items: center;
+}
+.all main .two .box-t .dol {
+  color: hsl(204deg, 43%, 93%);
+  margin: 0px 15px 0px 0px;
+  font-size: 30px;
+}
+.all main .two .box-t .p-m {
+  color: hsl(179deg, 47%, 72%);
+  font-size: 16px;
+}
+.all main .two .fl {
+  margin: 0;
+  color: hsl(204deg, 43%, 93%);
+  font-size: 16px;
+}
+.all main .two a {
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px 90px;
+  color: hsl(204deg, 43%, 93%);
+  margin-top: 20px;
+  background: hsl(71deg, 73%, 54%);
+}
+.all main .three {
+  grid-area: box-3;
+  background: hsl(178deg, 48%, 52%);
+  padding: 20px 30px 30px;
+}
+.all main .three h2 {
+  font-size: 19px;
+  color: hsl(204deg, 43%, 93%);
+}
+.all main .three p {
+  font-size: 16px;
+  color: hsl(178deg, 48%, 88%);
+}
+
+@media (max-width: 620px) {
+  body .all main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 250px 280px;
+    grid-template-areas: "box-1" "box-2" "box-3";
+  }
+  body .all main .one {
+    width: 360px;
+  }
+  body .all main .two a {
+    margin-top: 30px;
+  }
+  body .all main .three p {
+    line-height: 25px;
+  }
+}
+@media (max-width: 365px) {
+  body .all main .one {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
